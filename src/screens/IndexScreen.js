@@ -9,6 +9,14 @@ const IndexScreen = ({ navigation }) => {
 
   useEffect(() => {
     getBlogPosts();
+
+    const listener = navigation.addListener('didFocus', () => { // return to the screen, do another fetch
+      getBlogPosts();
+    });
+
+    return () => { // cleans up listener in case the indexscreen is fully removed - no dangling listeners!
+      listener.remove();
+    }
   }, []);
 
   return (
