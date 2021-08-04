@@ -1,4 +1,3 @@
-import { convertDescriptorToString } from 'jest-util';
 import React, { useReducer } from 'react';
 
 export default (reducer, actions, initialState) => {
