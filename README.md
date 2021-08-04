@@ -3,7 +3,6 @@
 ## Application Setup
 
 - Blog app built with React Native
-- Implement Global Context and Blog Post Provider
 - CRUD application
   - Allow users to create blog post, read from a list of existing blog posts, update and delete blog post
 
@@ -15,3 +14,21 @@ Blog application will be created with the following overall architecture and met
 2. Functional Components
 3. Blog posts delivered to the application using Context
 4. Hooks
+
+## Try it out
+
+You can run this app by performing these steps:
+
+```
+$ git clone https://github.com/arpatterson31/food-finder-react-native.git
+$ npm install
+```
+
+Then using any of the following scripts:
+
+```
+$ npm start // using expo app and scanning QR code
+$ npm android
+$ npm ios
+$ npm web
+```
